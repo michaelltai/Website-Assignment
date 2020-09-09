@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="web.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Img/suit.png"/>
+    <title>adinike · Men's Apparel</title>
+
+    <script src="inventory.js" type="text/javascript"></script>
+
+
+</head>
+<body> 
+    <header>
+      <a name="top"></a>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">adinike</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="men.html">MEN'S <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="women.html">WOMEN'S</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kids.html">KID'S</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acce.html">ACCESSORIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+        </ul>
+
+        <a href="checkout.html">CHECKOUT</a>
+        <a href="#login">LOGIN</a>
+      </div>
+    </nav>
+  </header>
+
+    <div class="bodyy">
+        <section id="Content">
+            <h4>Men's Apparel</h4>
+        </section>
+    </div>
+<br>
+    <div class="clothing">
+      <div class="card">
+        <img src="Img/adi1.jpg" id="men1" alt="Adidas Jacket Black" width="300" height="300" onclick="view('men1')">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adidas Jacket Black</h5>
+          <h6>$60</h6>
+          <p>Pick your size:</p>
+          <div class="box">
+            <select id="size1">
+              <option value="" selected disabled hidden>-</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+          <p>Quantity: </p>
+          <div class="quantity">
+            <input id="quan1" type="number" min="1" step="1" value="1">
+          </div>
+          <br>
+          <button id="order" class="btn btn-primary" onclick="additem('Adidas Jacket Black', 60, document.getElementById('size1').value, document.getElementById('quan1').value)">Add to cart</button>
+        </div>
+      </div>  
+
+      <div class="card">
+        <img src="Img/adi2.jpg" id="men2" onclick="view('men2')" alt="Adidas Jacket White" width="300" height="300">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adidas Jacket White</h5>
+          <h6>$50</h6>
+          <p>Pick your size:</p>
+          <div class="box">
+            <select id="size2">
+              <option value="" selected disabled hidden>-</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <p>Quantity: </p>
+          <div class="quantity">
+            <input id="quan2" type="number" min="1" step="1" value="1">
+          </div>
+          <br>
+          <button id="order" class="btn btn-primary" onclick="additem('Adidas Jacket White', 50, document.getElementById('size2').value, document.getElementById('quan2').value)">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Img/adi3.jpg" id="men3" onclick="view('men3')" alt="Adidas Jacket Black 2" width="300" height="300">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adidas Jacket Black 2</h5>
+          <h6>$45</h6>
+          <p>Pick your size:</p>
+          <div class="box">
+            <select id="size3">
+              <option value="" selected disabled hidden>-</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <p>Quantity: </p>
+          <div class="quantity">
+            <input id="quan3" type="number" min="1" step="1" value="1">
+          </div>
+          <br>
+          <button id="order" class="btn btn-primary" onclick="additem('Adidas Jacket Black 2', 45, document.getElementById('size3').value, document.getElementById('quan3').value)">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Img/adi4.jpg" id="men4" onclick="view('men4')" alt="Adidas Jogger" width="300" height="300">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adidas Jogger</h5>
+          <h6 id="price">$66</h6>
+          <p>Pick your size:</p>
+          <div class="box">
+            <select id="size4">
+              <option value="" selected disabled hidden>-</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <p>Quantity: </p>
+          <div class="quantity">
+            <input id="quan4" type="number" min="1" step="1" value="1">
+          </div>
+          <br>
+          <button id="order" class="btn btn-primary" onclick="additem('Adidas Jogger', 66, document.getElementById('size4').value, document.getElementById('quan4').value)">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Img/adi5.jpg" id="men5" onclick="view('men5')" alt="Adidas Pants" width="300" height="300">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adidas Pants</h5>
+          <h6 id="price">$80</h6>
+          <p>Pick your size:</p>
+          <div class="box">
+            <select id="size5">
+              <option value="" selected disabled hidden>-</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <p>Quantity: </p>
+          <div class="quantity">
+            <input id="quan5" type="number" min="1" step="1" value="1">
+          </div>
+          <br>
+          <button id="order" class="btn btn-primary" onclick="additem('Adidas Pants', 80, document.getElementById('size5').value, document.getElementById('quan5').value)">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Img/adi6.jpg" id="men6" onclick="view('men6')" alt="Adidas T-Shirt" width="300" height="300">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adidas T-Shirt</h5>
+          <h6 id="price">$20</h6>
+          <p>Pick your size:</p>
+          <div class="box">
+            <select id="size6">
+              <option value="" selected disabled hidden>-</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <p>Quantity: </p>
+          <div class="quantity">
+            <input id="quan6" type="number" min="1" step="1" value="1">
+          </div>
+          <br>
+          <button id="order" class="btn btn-primary" onclick="additem('AdidasT-Shirt', 20, document.getElementById('size6').value, document.getElementById('quan6').value)">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Img/adi7.jpg" id="men7" onclick="view('men7')" alt="Adidas Long Sleeve" width="300" height="300">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adidas Long Sleeve</h5>
+          <h6 id="price">$66</h6>
+          <p>Pick your size:</p>
+          <div class="box">
+            <select id="size7">
+              <option value="" selected disabled hidden>-</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <p>Quantity: </p>
+          <div class="quantity">
+            <input id="quan7" type="number" min="1" step="1" value="1">
+          </div>
+          <br>
+          <button id="order" class="btn btn-primary" onclick="additem('Adidas Long Sleeve', 66, document.getElementById('size7').value, document.getElementById('quan7').value)">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Img/adi8.jpg" id="men8" onclick="view('men8')" alt="Adidas Blue Shirt" width="300" height="300">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Adidas Blue Shirt</h5>
+          <h6 id="price">$22</h6>
+          <p>Pick your size:</p>
+          <div class="box">
+            <select id="size8">
+              <option value="" selected disabled hidden>-</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </div>
+          <p>Quantity: </p>
+          <div class="quantity">
+            <input id="quan8" type="number" min="1" step="1" value="1">
+          </div>
+          <br>
+          <button id="order" class="btn btn-primary" onclick="additem('Adidas Blue Shirt', 22, document.getElementById('size8').value, document.getElementById('quan8').value)">Add to cart</button>
+        </div>
+      </div>
+
+    </div>  
+    
+      <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#top">Back to top</a></p>
+    <p>&copy; 2020 adinike, Inc.</p>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</html>
